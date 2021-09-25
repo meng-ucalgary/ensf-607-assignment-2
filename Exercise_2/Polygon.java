@@ -37,10 +37,10 @@ class Polygon {
         //
         String s = "";
 
-        Iterator i = this.getLine();
+        Iterator<Line> i = this.getLine();
 
         if(i.hasNext()) {
-            s += String.format("The lines in polygon %d are:", classID);
+            s += String.format("The lines in polygon %d are:", this.objID);
         }
 
         while(i.hasNext()) {
