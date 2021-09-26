@@ -28,7 +28,7 @@ public class Game implements Constants {
      * Sets the referee to the reference passed in the parameter.
      *
      * @param r the refree to be used in the game.
-     * @throws IOException
+     * @throws IOException the IOException if thrown
      */
     public void appointReferee(Referee r) throws IOException {
         theRef = r;
@@ -39,7 +39,7 @@ public class Game implements Constants {
      * Driver function.
      *
      * @param args command line arguments are not used.
-     * @throws IOException
+     * @throws IOException the IOException if thrown
      */
     public static void main(String[] args) throws IOException {
         Referee theRef;
