@@ -1,4 +1,4 @@
-@startuml
+@startuml Exercise_1
 
 class Drawing
 class Polygon
