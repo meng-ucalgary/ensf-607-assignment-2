@@ -7,7 +7,7 @@ clear
 set -o xtrace
 
 # compile the files
-javac -sourcepath Exercise_4 -d Exercise_4/bin Exercise_4/*java
+javac -sourcepath src -d bin src/*java
 
 # run
-java -cp Exercise_4/bin Game
+java -cp bin Game
