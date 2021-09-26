@@ -1,0 +1,37 @@
+@startuml Exercise_4
+
+class Shop
+class Inventory
+class SupplierList
+class Supplier
+class Item
+
+Shop o-- "1" Inventory
+Inventory o-- "*" Item
+Shop o-- "1" SupplierList
+SupplierList o-- "*" Supplier
+Item "*" -- "1" Supplier
+
+class OrderLine
+class Order
+class OrderList
+
+OrderList o-- "*" Order
+Order o-- "*" OrderLine
+OrderLine o-- Item
+Shop o-- OrderList
+
+' ' COMMENTED LINES NOT TO BE SHOWN IN UML
+' abstract class FileManager
+' class SupplierFM
+' class ItemFM
+' class OrderFM
+' FileManager <|-- SupplierFM
+' FileManager <|-- ItemFM
+' FileManager <|-- OrderFM
+' FileManager <.. Shop
+' ItemFM o-- Item
+' SupplierFM o-- Supplier
+' OrderFM o-- Order
+
+@enduml
