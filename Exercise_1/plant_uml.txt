@@ -1,0 +1,13 @@
+@startuml
+
+class Drawing
+class Polygon
+class Point
+class Line
+
+Point "2" --o "1" Line
+Line "*" --o "1" Polygon
+Drawing ..> Polygon
+Drawing "1" -- "*" Line : >
+
+@enduml
